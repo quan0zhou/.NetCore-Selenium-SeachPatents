@@ -39,8 +39,7 @@ namespace SeachPatents
                 ShowResult(driver, page);
 
             } while (true);
-   
-            
+ 
 
         }
         private static void ShowResult(IWebDriver driver,string page="")
