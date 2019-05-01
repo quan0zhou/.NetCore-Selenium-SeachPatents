@@ -10,9 +10,7 @@ namespace SeachPatents
     {
         static void Main(string[] args)
         {
-            Stopwatch stopwatch = new Stopwatch();//监听耗时
-            stopwatch.Start();
-            IWebDriver driver = new ChromeDriver(Directory.GetCurrentDirectory());
+            IWebDriver driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/lib");
             driver.Navigate().GoToUrl("https://patentscope.wipo.int/search/zh/search.jsf");
             driver.Manage().Window.Maximize();//窗口最大化，便于脚本执行
             //设置超时等待(隐式等待)时间设置10秒
